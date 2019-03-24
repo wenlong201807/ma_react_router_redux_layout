@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, Route, Switch, Redirect } from 'react-router-dom';
 // import PropTypes from 'prop-types';
-import './styles/ReactPractise.css';
+import './sty/ReactPractise.css';
 import React_1 from './BaseReact/React_1';
 import ReactLift from './BaseReact/ReactLift';
 import Clock from './BaseReact/Clock';

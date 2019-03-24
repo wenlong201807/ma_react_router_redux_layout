@@ -6,7 +6,7 @@ import Product from './Product';
 import Case from './Case';
 import About from './About';
 import ReactPractise from './ReactPractise';
-import './styles/Home.css';
+import './sty/Home.css';
 
 class Home extends React.Component {
 	constructor(props) {
