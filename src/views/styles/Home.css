@@ -40,12 +40,11 @@ li {
 
 .line-flex-wrap .content {
   height: 82vh;
+
   display: flex;
 }
 
-/* .main {
-  display: flex;
-} */
+
 
 .content_menu {
   flex: 4;
@@ -53,12 +52,12 @@ li {
   min-width: 150px;
   max-width: 150px;
   padding: 10px;
-  /* min-height: 400px; */
   background: blanchedalmond;
 }
 
 .content_main {
   flex: 15;
+  /* overflow: auto; */
   background: burlywood;
 }
 
