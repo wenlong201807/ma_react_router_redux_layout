@@ -1,0 +1,74 @@
+.about {
+  /* height: 200px;
+  width: 300px; */
+  border: 10px solid red;
+  padding: 15px;
+  margin: 30px;
+  background: bisque;
+  color: blue;
+}
+
+.child {
+  height: 150px;
+  width: 60px;
+  padding: 10px;
+  margin: 5px;
+  background: yellow;
+  color: aquamarine;
+}
+
+li {
+  list-style: none;
+}
+
+.line-flex-wrap {
+  background: #fff;
+}
+
+.line-flex-wrap .head {
+  height: 10vh;
+  line-height: 10vh;
+  min-height: 30px;
+  background: yellowgreen;
+}
+
+.line-flex-wrap .foot {
+  height: 8vh;
+  line-height: 8vh;
+  min-height: 20px;
+}
+
+.line-flex-wrap .content {
+  height: 82vh;
+  display: flex;
+}
+
+/* .main {
+  display: flex;
+} */
+
+.content_menu {
+  flex: 4;
+  box-sizing: border-box;
+  min-width: 150px;
+  max-width: 150px;
+  padding: 10px;
+  /* min-height: 400px; */
+  background: blanchedalmond;
+}
+
+.content_main {
+  flex: 15;
+  background: burlywood;
+}
+
+.mygod {
+  text-align: center;
+}
+
+.foot {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  background: burlywood;
+}
