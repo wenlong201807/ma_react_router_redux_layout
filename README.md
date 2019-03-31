@@ -1,4 +1,6 @@
-#  功能说明书
+#  功能说明书 
+##  本地文件  E:\react_container\rea-route
+##  GitHub 仓库名字 https://github.com/wenlong201807/ma_react_router_redux_layout
 
 ###  实现功能部分
 

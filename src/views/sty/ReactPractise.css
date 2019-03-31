@@ -1,5 +1,5 @@
 .react_practise_menu {
-  height: 120px;
+  height: 150px;
   overflow: hidden;
   background: beige;
 }
@@ -10,6 +10,6 @@
   padding: 15px;
   margin: 10px 30px 30px;
   border-radius: 10px;
-  height: 62vh;
+  height: 60vh;
   overflow: auto;
 }

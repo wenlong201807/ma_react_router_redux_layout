@@ -6,6 +6,14 @@ import React_1 from './BaseReact/React_1';
 import ReactLift from './BaseReact/ReactLift';
 import Clock from './BaseReact/Clock';
 import EventDemo from './BaseReact/EventDemo';
+import NewsList from './BaseReact/NewsList';
+import FromDemo from './BaseReact/FromDemo';
+import FromMulDemo from './BaseReact/FromMulDemo';
+import FromSub from './BaseReact/FromSub';
+import Greeting from './BaseReact/Greeting';
+import stateLifting from './BaseReact/stateLifting';
+import Dialog from './BaseReact/Dialog';
+import JSXFun from './BaseReact/JSXFun';
 
 class ReactPractise extends React.Component {
 	constructor(props) {
@@ -29,6 +37,14 @@ class ReactPractise extends React.Component {
 						<Link to={`${match.path}/react_life`}>ReactLift</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/clock`}>Clock</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/eventDemo`}>EventDemo</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/newslist`}>NewsList</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/fromDemo`}>FromDemo</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/fromMulDemo`}>FromMulDemo</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/FromSub`}>FromSub</Link> <span>&nbsp;&nbsp;</span> <hr />
+						<Link to={`${match.path}/Greeting`}>Greeting</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/stateLifting`}>stateLifting</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/Dialog`}>Dialog</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/JSXFun`}>JSXFun</Link> <span>&nbsp;&nbsp;</span>
 						<hr />
 					</div>
 				</div>
@@ -40,6 +56,15 @@ class ReactPractise extends React.Component {
 						<Route path={`${match.path}/react_life`} component={ReactLift} />
 						<Route path={`${match.path}/clock`} component={Clock} />
 						<Route path={`${match.path}/eventDemo`} component={EventDemo} />
+						<Route path={`${match.path}/newslist`} component={NewsList} />
+						<Route path={`${match.path}/fromDemo`} component={FromDemo} />
+						<Route path={`${match.path}/fromMulDemo`} component={FromMulDemo} />
+						<Route path={`${match.path}/FromSub`} component={FromSub} />
+
+						<Route path={`${match.path}/Greeting`} component={Greeting} />
+						<Route path={`${match.path}/stateLifting`} component={stateLifting} />
+						<Route path={`${match.path}/Dialog`} component={Dialog} />
+						<Route path={`${match.path}/JSXFun`} component={JSXFun} />
 
 						<Route
 							render={() => {
