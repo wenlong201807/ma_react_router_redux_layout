@@ -14,6 +14,10 @@ import Greeting from './BaseReact/Greeting';
 import stateLifting from './BaseReact/stateLifting';
 import Dialog from './BaseReact/Dialog';
 import JSXFun from './BaseReact/JSXFun';
+import RefTrans from './BaseReact/RefTrans';
+import DomVsJSX from './BaseReact/DomVsJSX';
+import DangerouslyHTML from './BaseReact/DangerouslyHTML';
+import ContextDemo from './BaseReact/ContextDemo';
 
 class ReactPractise extends React.Component {
 	constructor(props) {
@@ -44,7 +48,11 @@ class ReactPractise extends React.Component {
 						<Link to={`${match.path}/Greeting`}>Greeting</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/stateLifting`}>stateLifting</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/Dialog`}>Dialog</Link> <span>&nbsp;&nbsp;</span>
-						<Link to={`${match.path}/JSXFun`}>JSXFun</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/JSXFun`}>JSXFun(父组件的核心)</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/RefTrans`}>RefTrans</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/DomVsJSX`}>DomVsJSX(scss)</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/DangerouslyHTML`}>DangerouslyHTML</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/ContextDemo`}>ContextDemo</Link> <span>&nbsp;&nbsp;</span>
 						<hr />
 					</div>
 				</div>
@@ -65,6 +73,10 @@ class ReactPractise extends React.Component {
 						<Route path={`${match.path}/stateLifting`} component={stateLifting} />
 						<Route path={`${match.path}/Dialog`} component={Dialog} />
 						<Route path={`${match.path}/JSXFun`} component={JSXFun} />
+						<Route path={`${match.path}/RefTrans`} component={RefTrans} />
+						<Route path={`${match.path}/DomVsJSX`} component={DomVsJSX} />
+						<Route path={`${match.path}/DangerouslyHTML`} component={DangerouslyHTML} />
+						<Route path={`${match.path}/ContextDemo`} component={ContextDemo} />
 
 						<Route
 							render={() => {
