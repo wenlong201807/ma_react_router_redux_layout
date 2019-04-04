@@ -31,6 +31,9 @@ class Clock extends React.Component {
 			<div>
 				<h3>自动计时的始终</h3>
 				<p>当前时间是:{this.state.now}</p>
+				{/* 只能用在html页面 */}
+				<img src="%PUBLIC_URL%/favicon.ico" alt="图片不显示时。我显示" />
+				<img src="/favicon.ico" alt="" />
 			</div>
 		);
 	}

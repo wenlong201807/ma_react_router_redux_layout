@@ -19,7 +19,11 @@ class NewsList extends React.Component {
 	}
 
 	initData() {
-		axios.get('http://localhost:3003/news').then((res) => {
+		// "proxy": "http://localhost:3003",
+		// https://www.cnblogs.com/crazycode2/p/9757236.html(配置代理)
+		// axios.get('http://localhost:3003/news').then((res) => {
+		axios.get('/news').then((res) => {
+			// http://localhost:3003/news
 			this.setState({ newsList: res.data });
 		});
 	}

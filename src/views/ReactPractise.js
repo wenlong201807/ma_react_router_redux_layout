@@ -41,7 +41,7 @@ class ReactPractise extends React.Component {
 						<Link to={`${match.path}/react_life`}>ReactLift</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/clock`}>Clock</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/eventDemo`}>EventDemo</Link> <span>&nbsp;&nbsp;</span>
-						<Link to={`${match.path}/newslist`}>NewsList</Link> <span>&nbsp;&nbsp;</span>
+						<Link to={`${match.path}/newslist`}>NewsList(proxy)</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/fromDemo`}>FromDemo</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/fromMulDemo`}>FromMulDemo</Link> <span>&nbsp;&nbsp;</span>
 						<Link to={`${match.path}/FromSub`}>FromSub</Link> <span>&nbsp;&nbsp;</span> <hr />

@@ -1,4 +1,5 @@
 import React from 'react';
+// HTTPS=true yarn start
 // import PropTypes from 'prop-types';
 import { HashRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 import Login from './views/Login';
