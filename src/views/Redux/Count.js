@@ -1,21 +1,22 @@
 import React from 'react';
 // import store from './store';
-import store, { ActionCreators } from './store';
+import store from './store';
+import { NumActionCreators } from './actions/NumAction';
 // import PropTypes from 'prop-types';
 
 class Count extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			Num: store.getState(),
-			replaceNum: store.getState()
+			Num: store.getState().Num,
+			replaceNum: store.getState().Num
 		};
 
 		this.state.unsubscribe = store.subscribe(() => {
 			this.setState(() => {
 				return {
-					Num: store.getState(),
-					replaceNum: store.getState()
+					Num: store.getState().Num,
+					replaceNum: store.getState().Num
 				};
 			});
 		});
@@ -26,13 +27,13 @@ class Count extends React.Component {
 	}
 
 	addNum = () => {
-		store.dispatch(ActionCreators.AddActionCreator(1));
+		store.dispatch(NumActionCreators.AddActionCreator(1));
 	};
 	minusNum = () => {
-		store.dispatch(ActionCreators.MinusActionCreator(1));
+		store.dispatch(NumActionCreators.MinusActionCreator(1));
 	};
 	replaceNum = () => {
-		store.dispatch(ActionCreators.ReplaceActionCreator(this.state.replaceNum));
+		store.dispatch(NumActionCreators.ReplaceActionCreator(this.state.replaceNum));
 	};
 	chengeInput = (e) => {
 		console.log(e.target.value);
