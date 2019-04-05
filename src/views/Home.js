@@ -6,6 +6,7 @@ import Product from './Product';
 import Case from './Case';
 import About from './About';
 import ReactPractise from './ReactPractise';
+import ReactRedux from './ReduxRoute';
 import './sty/Home.css';
 
 class Home extends React.Component {
@@ -45,6 +46,7 @@ class Home extends React.Component {
 					<Link to={`${match.path}/case`}>成功案例</Link> <span>&nbsp;</span>
 					<Link to={`${match.path}/about`}>关于</Link> <span>&nbsp;</span>
 					<Link to={`${match.path}/reactpractise`}>react基础练习</Link>
+					<Link to={`${match.path}/ReactRedux`}>ReactRedux</Link>
 					<button onClick={this.logout} className="button is-danger">
 						登出
 					</button>
@@ -66,6 +68,9 @@ class Home extends React.Component {
 						<li>
 							<Link to={`${match.path}/reactpractise`}>react基础练习</Link>
 						</li>
+						<li>
+							<Link to={`${match.path}/ReactRedux`}>ReactRedux</Link>
+						</li>
 					</div>
 					<div className="content_main">
 						<Switch>
@@ -74,7 +79,7 @@ class Home extends React.Component {
 							<Route path={`${match.path}/case`} component={Case} />
 							<Route path={`${match.path}/about`} component={About} />
 							<Route path={`${match.path}/reactpractise`} component={ReactPractise} />
-
+							<Route path={`${match.path}/ReactRedux`} component={ReactRedux} />
 							<Route
 								render={() => {
 									return (
