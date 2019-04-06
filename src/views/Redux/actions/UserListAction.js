@@ -46,7 +46,7 @@ export const UserListActionCreators = {
 	RemoveUserListAsyncAction(payload) {
 		return function(dispatch, getState) {
 			return axios.delete('/news/' + payload).then((res) => {
-				console.log(res);
+				console.log(res, payload);
 				dispatch(UserListActionCreators.RemoveUserListAction(payload));
 			});
 		};

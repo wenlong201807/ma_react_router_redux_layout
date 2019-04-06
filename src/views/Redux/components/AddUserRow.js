@@ -49,7 +49,11 @@ class AddUserRow extends Component {
 			.addUser(this.getAddUser())
 			.then(() => {
 				message.success('数据添加成功');
-				this.setState({ isAdd: false });
+				this.setState({
+					isAdd: false,
+					title: '',
+					isDel: false
+				});
 			})
 			.catch(() => {
 				message.error('数据添加失败，请重试');
