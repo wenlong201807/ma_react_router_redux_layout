@@ -49,7 +49,7 @@ class ReduxUserList extends Component {
 								<UserRow
 									updateUser={this.props.updateUser}
 									delUser={() => this.props.delUser(item.id)}
-									key={index}
+									key={item.id}
 									User={item}
 								/>
 								// <tr key={index}>

@@ -58,12 +58,12 @@ export const UserListActionCreators = {
 		};
 	},
 	UpdateUserListAsyncAction(payload) {
-		return function(dispatch, getState) {
+		return (dispatch, getState) => {
 			console.log(payload);
 			return axios.put('/news/' + payload.id, payload).then((res) => {
 				console.log(res);
-				dispatch(UserListActionCreators.UpdateUserListAction(res.data));
-				// dispatch(this.UpdateUserListAction(res.data)); // 错误的
+				// dispatch(UserListActionCreators.UpdateUserListAction(res.data));
+				dispatch(this.UpdateUserListAction(res.data));
 			});
 		};
 	}

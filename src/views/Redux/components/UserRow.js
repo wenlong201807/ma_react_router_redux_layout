@@ -78,6 +78,7 @@ class UserRow extends Component {
 						<td>
 							<Button
 								onClick={() => {
+									console.log(this.state.EditUser);
 									this.setState({ isEdit: true });
 								}}
 								type="primary">
