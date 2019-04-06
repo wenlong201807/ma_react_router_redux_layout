@@ -5,6 +5,7 @@ import ReactTest from './Redux/reduxTest';
 import Count from './Redux/Count';
 import UserListCURD from './Redux/UserListCURD';
 import AppCount from './Redux/AppCount';
+import ReduxUserList from './Redux/ReduxUserList';
 
 class ComponentName extends React.Component {
 	constructor(props) {
@@ -22,6 +23,7 @@ class ComponentName extends React.Component {
 					<Link to={`${match.path}/Count`}>Count(加减换)</Link> <span>&nbsp;&nbsp;</span>
 					<Link to={`${match.path}/UserListCURD`}>UserListCURD</Link> <span>&nbsp;&nbsp;</span>
 					<Link to={`${match.path}/AppCount`}>AppCount</Link> <span>&nbsp;&nbsp;</span>
+					<Link to={`${match.path}/ReduxUserList`}>ReduxUserList</Link> <span>&nbsp;&nbsp;</span>
 					<hr />
 				</div>
 				<div className="react_practise_contain">
@@ -35,6 +37,7 @@ class ComponentName extends React.Component {
 						<Route path={`${match.path}/Count`} component={Count} />
 						<Route path={`${match.path}/UserListCURD`} component={UserListCURD} />
 						<Route path={`${match.path}/AppCount`} component={AppCount} />
+						<Route path={`${match.path}/ReduxUserList`} component={ReduxUserList} />
 
 						<Route
 							render={() => {
